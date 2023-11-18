@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/stylesheet/global.css">
+    <link rel="stylesheet" href="assets/stylesheet/master.css">
+    <link rel="stylesheet" href="assets/boot/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/boot/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="col-12 d-grid">
+        <article class="col-12 d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center flex-wrap p-3">
+                <h1 class="col-12 p-0 m-0 d-flex justify-content-center align-items-center">Modal project</h1>
+                <button class="col-6 p-0" onclick="_key()">open modal</button>
+            </div>
+        </article>
+        <article class="col-12 box1 d-flex justify-content-center align-items-center">
+            <div >
+                <div class="col-12 d-flex justify-content-end px-4">
+                    <i class="bi bi-x" onclick="_para()"></i>
+                </div>
+                <h2 class="col-12 d-flex justify-content-center">
+                    modal content
+                </h2>
+            </div>
+        </article>
+    </section>
+</body>
+<script>
+    function _key(){
+        document.getElementsByClassName('box1')[0].classList.add('box2')
+    }
+    function _para(){
+        document.getElementsByClassName('box1')[0].classList.remove('box2')
+    }
+</script>
+</html>

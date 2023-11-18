@@ -1,0 +1,88 @@
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 576px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+}
+section {
+  height: 46vw;
+}
+section > article {
+  width: 100%;
+  height: 100%;
+}
+section > article:nth-of-type(1) {
+  grid-area: 1/1/2/2;
+  background-image: url(../img/img-1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+section > article:nth-of-type(1) > div {
+  width: 40%;
+  height: 30%;
+  background-color: rgba(240, 248, 255, 0.758);
+  border-radius: 20px;
+}
+section > article:nth-of-type(1) > div > h1 {
+  text-transform: capitalize;
+  height: 70%;
+  font-size: 3rem;
+}
+section > article:nth-of-type(1) > div > button {
+  border-radius: 20px;
+  height: 30%;
+  text-transform: uppercase;
+  background-color: rgb(36, 84, 243);
+  border: 2px solid rgb(36, 84, 243);
+  transition: 0.4s;
+  color: aliceblue;
+}
+section > article:nth-of-type(1) > div > button:hover {
+  background-color: aliceblue;
+  color: rgb(36, 84, 243);
+}
+section > article:nth-of-type(2) {
+  grid-area: 1/1/2/2;
+  background-color: rgba(36, 84, 243, 0.219);
+}
+section > article:nth-of-type(2) > div {
+  width: 40%;
+  height: 30%;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+section > article:nth-of-type(2) > div > div {
+  height: 30%;
+}
+section > article:nth-of-type(2) > div > div > i {
+  font-size: 3rem;
+  color: red;
+  transition: 0;
+  cursor: pointer;
+}
+section > article:nth-of-type(2) > div > div > i:hover {
+  transition: 0.4s;
+  transform: scale(1.5);
+}
+section > article:nth-of-type(2) > div > h2 {
+  text-transform: capitalize;
+  height: 70%;
+  font-size: 3rem;
+}
+
+.box1 {
+  visibility: hidden;
+}
+
+.box2 {
+  visibility: visible;
+}/*# sourceMappingURL=master.css.map */
